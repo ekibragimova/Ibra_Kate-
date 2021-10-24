@@ -13,12 +13,7 @@ namespace задание4
             double g;
             Console.WriteLine(Math.Round(value: g = Conclusion, digits: 3));
             Console.ReadKey();
-
-
-
-
-
-        }
+         }
         static double Conclusion
         {
             get
