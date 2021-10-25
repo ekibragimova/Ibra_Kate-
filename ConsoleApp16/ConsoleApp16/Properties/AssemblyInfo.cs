@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Task4.1")]
+[assembly: AssemblyTitle("ConsoleApp16")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Task4.1")]
+[assembly: AssemblyProduct("ConsoleApp16")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("43b92632-9fdb-4ea4-a326-d9da8e5dd06d")]
+[assembly: Guid("3a0abdb9-d3d2-4d55-b20a-7a0089a61585")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
