@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55F55CE7-2C50-4001-B08B-52B98E4EC4A3}</ProjectGuid>
+    <ProjectGuid>{3415617E-D6A5-47E9-8840-7DA8E27DC59F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Yjvth4</RootNamespace>
-    <AssemblyName>Yjvth4</AssemblyName>
+    <RootNamespace>Номер3</RootNamespace>
+    <AssemblyName>Номер3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

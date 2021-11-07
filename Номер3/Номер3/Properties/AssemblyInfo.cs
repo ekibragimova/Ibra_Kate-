@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Yjvth4")]
+[assembly: AssemblyTitle("Номер3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Yjvth4")]
+[assembly: AssemblyProduct("Номер3")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("55f55ce7-2c50-4001-b08b-52b98e4ec4a3")]
+[assembly: Guid("3415617e-d6a5-47e9-8840-7da8e27dc59f")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
