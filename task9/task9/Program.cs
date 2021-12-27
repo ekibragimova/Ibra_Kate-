@@ -10,7 +10,6 @@ namespace task9
     {
         static void Main(string[] args)
         {
-            {
                 Console.WriteLine("Enter 'n'");
                 int n = int.Parse(Console.ReadLine());
                 int[] arr = new int[n];
@@ -66,6 +65,5 @@ namespace task9
                 }
                 return (arr);
             } 
-        }
     }
 }
