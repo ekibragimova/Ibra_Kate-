@@ -27,7 +27,7 @@ namespace task4fortest
             static bool TheSpherOfEratosphen (int a)
             {
                 int c=1;
-                for (int i=2; i <= Math.Sqrt; i++)
+                for (int i=2; i <= Math.Sqrt(a); i++)
                 {
                     if (a % i == 0)
                     {
@@ -35,9 +35,7 @@ namespace task4fortest
                         break; 
                     }
                 }
-                if (c == 1)
-                { return true; }
-                else { return false; }
+                return (c == 1);
 
             }
         }
