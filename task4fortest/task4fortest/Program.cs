@@ -10,18 +10,19 @@ namespace task4fortest
     {
         static void Main(string[] args)
         {
-            var number = 0;
+            var number = 1;
             var p = 0;
-            for (var i = 2; i <= 1000; i++)
+            int mistake=0;
+            while (mistake != 1)
             {
-                number = i;
-                if (number % 2!=0)
+                number +=2;
                     for (var m =1; m < number; m++)
                     {
-                        if (TheSpherOfEratosphen(p) && number == p + 2 * m * m)
+                        if ( number == TheSpherOfEratosphen(p) + 2 * m * m)
                             break;
                         else;
                         Console.WriteLine(number);
+                        mistake=1;
                     }
             }
             static bool TheSpherOfEratosphen (int a)
