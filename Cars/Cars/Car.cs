@@ -13,7 +13,7 @@ namespace Cars
         public readonly string VIN;
         public readonly CarBodyType BodyType;
         public decimal Cost;
-        public readonly DateTime SaleDate;
+        public string SaleDate;
         public string CustomerName;
         public int YearOfReveal;
 
@@ -29,7 +29,7 @@ namespace Cars
             Brand = brand;
             VIN = vIN;
             BodyType = bodyType;
-            SaleDate = DateTime.Parse (saleDate);
+            SaleDate = saleDate;
             CustomerName=customerName;
             Cost = cost;
             YearOfReveal = yearOfReveal;
@@ -39,28 +39,31 @@ namespace Cars
             return $"{Brand} {VIN}";
         }
 
-        public void PrintInfo()
+        public virtual string [] GetInfo()
         {
-            Console.WriteLine(this);
+            var info = new string[2];
+            info[0] = ToString(); 
 
             var bodyType = "";
             switch (BodyType)
             {
                 case CarBodyType.Sedan:
-                    bodyType = "Седан";
+                    bodyType ="Седан";
                     break;
                 case CarBodyType.Hetchback:
-                    bodyType = "Хэтчбэк";
+                    bodyType ="Хэтчбэк";
                     break;
                 case CarBodyType.Universal:
-                    bodyType = "Универсал";
+                    bodyType ="Универсал";
                     break;
                 case CarBodyType.Cabriolette:
-                    bodyType = "Кабриолет";
+                    bodyType ="Кабриолет";
                     break;
             }
-            Console.WriteLine($" Тип кузова:{BodyType}. Год выпуска:{YearOfReveal}.полное имя покупапателя:{ CustomerName}. Цена:{ Cost}. Дата продажи{SaleDate}. Возраст машины {AgeOfCar}");
+            info[1] =$"Тип кузова: {BodyType}. Год выпуска: {YearOfReveal}. Полное имя покупапателя: {CustomerName}. Цена: {Cost}. Дата продажи: {SaleDate}. Возраст машины: {AgeOfCar}";
+            return info;
         }
+       
 
     }
 }
