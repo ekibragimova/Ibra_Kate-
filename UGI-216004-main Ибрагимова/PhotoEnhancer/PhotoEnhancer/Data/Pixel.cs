@@ -65,22 +65,5 @@ namespace PhotoEnhancer
 
             return lightness;
         }
-
-        private static double MaxOfRGB(double r,double g, double b)
-        {
-            double max = 0;
-            if ((r >= g) && (r >= b)) max = r;
-            else if ((g >= r) && (g >= b)) max = g;
-            else max = b;
-            return max;
-        }
-        private static double MinOfRGB(double r, double g, double b)
-        {
-            double min = 0;
-            if ((r <= g) && (r <= b)) min = r;
-            else if ((g <= r) && (g <= b)) min = g;
-                else min = b;
-            return min;
-        }
     }
 }
