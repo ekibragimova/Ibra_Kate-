@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PhotoEnhancer
+﻿namespace PhotoEnhancer
 {
     partial class MainForm
     {
@@ -47,20 +45,20 @@ namespace PhotoEnhancer
             // 
             // orginalPictureBox
             // 
-            this.orginalPictureBox.Location = new System.Drawing.Point(379, 50);
-            this.orginalPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.orginalPictureBox.Location = new System.Drawing.Point(284, 41);
+            this.orginalPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.orginalPictureBox.Name = "orginalPictureBox";
-            this.orginalPictureBox.Size = new System.Drawing.Size(400, 300);
+            this.orginalPictureBox.Size = new System.Drawing.Size(300, 244);
             this.orginalPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.orginalPictureBox.TabIndex = 0;
             this.orginalPictureBox.TabStop = false;
             // 
             // resultPictureBox
             // 
-            this.resultPictureBox.Location = new System.Drawing.Point(379, 370);
-            this.resultPictureBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.resultPictureBox.Location = new System.Drawing.Point(284, 301);
+            this.resultPictureBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resultPictureBox.Name = "resultPictureBox";
-            this.resultPictureBox.Size = new System.Drawing.Size(400, 300);
+            this.resultPictureBox.Size = new System.Drawing.Size(300, 244);
             this.resultPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.resultPictureBox.TabIndex = 1;
             this.resultPictureBox.TabStop = false;
@@ -70,10 +68,10 @@ namespace PhotoEnhancer
             this.filtersComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.filtersComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.filtersComboBox.FormattingEnabled = true;
-            this.filtersComboBox.Location = new System.Drawing.Point(20, 50);
-            this.filtersComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.filtersComboBox.Location = new System.Drawing.Point(15, 41);
+            this.filtersComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filtersComboBox.Name = "filtersComboBox";
-            this.filtersComboBox.Size = new System.Drawing.Size(340, 28);
+            this.filtersComboBox.Size = new System.Drawing.Size(256, 24);
             this.filtersComboBox.TabIndex = 2;
             this.filtersComboBox.Visible = false;
             this.filtersComboBox.SelectedIndexChanged += new System.EventHandler(this.filtersComboBox_SelectedIndexChanged);
@@ -81,10 +79,10 @@ namespace PhotoEnhancer
             // applyButton
             // 
             this.applyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.applyButton.Location = new System.Drawing.Point(91, 634);
-            this.applyButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.applyButton.Location = new System.Drawing.Point(68, 515);
+            this.applyButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.applyButton.Name = "applyButton";
-            this.applyButton.Size = new System.Drawing.Size(173, 36);
+            this.applyButton.Size = new System.Drawing.Size(130, 29);
             this.applyButton.TabIndex = 3;
             this.applyButton.Text = "Применить";
             this.applyButton.UseVisualStyleBackColor = true;
@@ -93,21 +91,20 @@ namespace PhotoEnhancer
             // 
             // menuStrip1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.openToolStripMenuItem,
             this.saveToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(799, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(599, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.openToolStripMenuItem.Text = "Открыть";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
@@ -115,14 +112,14 @@ namespace PhotoEnhancer
             // 
             this.saveToolStripMenuItem.Enabled = false;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.saveToolStripMenuItem.Text = "Сохранить";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.exitToolStripMenuItem.Text = "Выход";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -136,9 +133,9 @@ namespace PhotoEnhancer
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 694);
+            this.ClientSize = new System.Drawing.Size(599, 564);
             this.Controls.Add(this.applyButton);
             this.Controls.Add(this.filtersComboBox);
             this.Controls.Add(this.resultPictureBox);
@@ -146,7 +143,7 @@ namespace PhotoEnhancer
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "PhotoEnhancer";
@@ -171,8 +168,6 @@ namespace PhotoEnhancer
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-
-        public EventHandler MainForm_Load { get; private set; }
     }
 }
 

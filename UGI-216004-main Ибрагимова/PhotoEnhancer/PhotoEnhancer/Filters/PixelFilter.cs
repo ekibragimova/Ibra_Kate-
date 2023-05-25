@@ -6,21 +6,26 @@ using System.Threading.Tasks;
 
 namespace PhotoEnhancer
 {
-    public abstract class PixelFilter : IFilter
+    public class PixelFilter<TParameters> : ParametrizedFilter<TParameters>
+        where TParameters : IParameters, new()
     {
-        public abstract ParameterInfo[] GetParametersInfo();
+        Func<Pixel, TParameters, Pixel> processor;
 
-        public Photo Process(Photo original, double[] parameters)
+        public PixelFilter(string name, Func<Pixel, TParameters, Pixel> processor)
+        {
+            this.name = name;
+            this.processor = processor;
+        }
+
+        public override Photo Process(Photo original, TParameters parameters)
         {
             var newPhoto = new Photo(original.Width, original.Height);
 
             for (var x = 0; x < original.Width; x++)
                 for (var y = 0; y < original.Height; y++)
-                    newPhoto[x, y] = ProcessPixel(original[x, y], parameters);
+                    newPhoto[x, y] = processor(original[x, y], parameters);
 
             return newPhoto;
         }
-
-        public abstract Pixel ProcessPixel(Pixel pixel, double[] parameters);
     }
 }

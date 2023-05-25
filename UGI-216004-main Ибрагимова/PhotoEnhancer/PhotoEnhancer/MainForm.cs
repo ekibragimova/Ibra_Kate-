@@ -21,6 +21,10 @@ namespace PhotoEnhancer
         public MainForm()
         {
             InitializeComponent();
+
+            //var bmp = (Bitmap)Image.FromFile("cat.jpg");
+            //orginalPictureBox.Image = bmp;
+            //originalPhoto = Convertors.BitmapToPhoto(bmp);
         }
 
         private void filtersComboBox_SelectedIndexChanged(object sender, EventArgs e)

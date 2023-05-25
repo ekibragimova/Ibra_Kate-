@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace PhotoEnhancer
 {
-    public class LighteningFilter : PixelFilter
+    public class LighteningParameters : IParameters
     {
-        public override ParameterInfo[] GetParametersInfo()
+        public double Coefficient { get; set; }
+        public ParameterInfo[] GetDecription()
         {
             return new[]
             {
@@ -23,14 +25,9 @@ namespace PhotoEnhancer
             };
         }
 
-        public override Pixel ProcessPixel(Pixel pixel, double[] parameters)
+        public void SetValues(double[] values)
         {
-            return pixel * parameters[0];
-        }
-
-        public override string ToString()
-        {
-            return "Осветление/затемнение";
+            Coefficient = values[0];
         }
     }
 }
