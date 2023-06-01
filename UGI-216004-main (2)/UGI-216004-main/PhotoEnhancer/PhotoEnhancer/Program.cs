@@ -53,25 +53,20 @@ namespace PhotoEnhancer
                 ));
 
             mainForm.AddFilter(new TransformFilter(
-                "Отражение",
-                size => new Size(size.Height, size.Width),
-                (point, size) => new Point(point.Y, point.X)
-                ));
-
-            mainForm.AddFilter(new TransformFilter(
                 "Поворот на 90° против ч. с.",
                 size => new Size(size.Height, size.Width),
                 (point, size) => new Point(size.Width - point.Y - 1, point.X)
                 ));
 
+            mainForm.AddFilter(new TransformFilter(
+            "Отражение",
+            size => new Size(size.Height, size.Width),
+            (point, size) => new Point(point.Y, point.X)
+            ));
+
             mainForm.AddFilter(new TransformFilter<RotationParameters>(
                 "Поворот на произвольный угол",
                 new RotateTransformer()
-                ));
-
-            mainForm.AddFilter(new TransformFilter<ShiftUpParameters>(
-                "Сдвиг вверх",
-                new ShiftUpTransformer()
                 ));
 
             Application.Run(mainForm);

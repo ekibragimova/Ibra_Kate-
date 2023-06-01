@@ -7,27 +7,27 @@ using System.Threading.Tasks;
 
 namespace PhotoEnhancer
 {
-    public class ShiftUpParameters : IParameters
+    public class NoiseParameters : IParameters
     {
-        public double ShiftPercent { get; set; }
+        public double NoiseIntensity { get; set; }
         public ParameterInfo[] GetDecription()
         {
             return new[]
             {
                 new ParameterInfo()
                 {
-                    Name = "Процент сдвига",
+                    Name = "Интенсивность шума",
                     MinValue = 0,
-                    MaxValue = 100,
+                    MaxValue = 1,
                     DefaultValue = 0,
-                    Increment = 5
+                    Increment = 0.01
                 }
             };
         }
 
         public void SetValues(double[] values)
         {
-            ShiftPercent = values[0];
+            NoiseIntensity = values[0];
         }
     }
 }

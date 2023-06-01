@@ -52,11 +52,9 @@
     <Compile Include="Filters\EmptyParameters.cs" />
     <Compile Include="Filters\IFilter.cs" />
     <Compile Include="Filters\IParameters.cs" />
-    <Compile Include="Filters\NoiseParameters.cs" />
+    <Compile Include="Filters\LighteningParameters .cs" />
     <Compile Include="Filters\Transform\ITransformer.cs" />
-    <Compile Include="Filters\Transform\ShiftUpTransformer.cs" />
     <Compile Include="Filters\Transform\RotateTransformer.cs" />
-    <Compile Include="Filters\Transform\ShiftUpParameters.cs" />
     <Compile Include="Filters\Transform\RotationParameters.cs" />
     <Compile Include="Filters\LighteningParameters.cs" />
     <Compile Include="Filters\ParameterInfo.cs" />
